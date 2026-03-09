@@ -6,25 +6,7 @@ body{
  padding: 20;
  line-height: 1;
  background-image: url('Screenshot 2026-03-02 203058.png');
-}
 
-.sidebar {
-  width: 250px;
-  background: #ffffff;
-  padding: 20px;
-}
-
-.sidebar ul li {
-  list-style: none;
-  padding: 12px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.sidebar ul li i {
-  margin-right: 10px;
-  color: #a000a8;
 }
 
 header{
