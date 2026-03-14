@@ -298,3 +298,50 @@ main a[href^="mailto"] {
     color: #af4c87;
     font-weight: bold;
 }
+.contact-body {
+    background: #000;
+    color: #fff;
+}
+
+.contact-container {
+    margin-top: 120px;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-container h1 {
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+
+.contact-box {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    background: #111;
+    padding: 30px;
+    width: 280px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-item:hover {
+    background: #222;
+    transform: scale(1.05);
+}
+
+.contact-link {
+    color: #800020; /* Luxora Burgundy */
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
