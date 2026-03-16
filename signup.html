@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up - LUXORA</title>
+    style.css
+</head>
+
+<body class="signup-body">
+
+    <div class="signup-container">
+        <h2>Join LUXORA Insider</h2>
+        <p>Sign up to view our Winter Coats Special Stock.</p>
+
+        <form id="signupForm">
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="text" id="name" placeholder="Full Name" required>
+            <button type="submit" class="signup-btn">SIGN UP</button>
+        </form>
+    </div>
+
+<script>
+    document.getElementById("signupForm").addEventListener("submit", function(e){
+        e.preventDefault();
+
+        // Simulate successful signup
+        window.location.href = "stock.html"; // redirect to stock table
+    });
+</script>
+
+</body>
+</html>
