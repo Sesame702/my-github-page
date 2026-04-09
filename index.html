@@ -12,6 +12,20 @@
 </head>
 <body>
 
+    <!-- FULL WIDTH BOTTOM SIGNUP BAR -->
+<div id="signup-bar" class="signup-bar">
+  <div class="signup-bar-content">
+
+    <span>Join LUXORA Insider for exclusive drops & early access</span>
+
+    <div class="signup-bar-actions">
+      <button id="openPopup" class="signup-open-btn">Sign Up</button>
+      <button id="closeSignupBar" class="signup-bar-close">&times;</button>
+    </div>
+
+  </div>
+</div>
+
    <!-- FULLSCREEN POPUP OVERLAY -->
 <div id="luxora-popup" class="popup-overlay">
 
@@ -33,22 +47,19 @@
 </div>
 ``
 <!-- NAVBAR -->
-<header class="navbar">
-    <div class="logo">LUXORA CLOTHING STORE</div>
+<header class="luxora-navbar">
+    <div class="nav-logo">LUXORA</div>
 
     <nav class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">Categories</a>
-        <a href="#">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="winter.html">Coats</a>
+        <a href="dresses.html">Dresses</a>
+        <a href="shapewear.html">Shapewear</a>
+        <a href="heels.html">Heels</a>
+        <a href="contact.html">Contact</a>
     </nav>
-
-    <div class="nav-icons">
-        <span class="icon">🔍</span>
-        <span class="icon">🛒</span>
-    </div>
 </header>
-
+``
 <section class="hero">
     <table style="width:100%">
         <tr>
@@ -126,38 +137,6 @@
         <img src="image.png" width="360" height="360">
     </div>
 </section>
-       <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-
-        <div class="container"> 
-
-            <a class="navbar-brand" href="index.html">LUXORA CLOTHING STORE</a> 
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
-
-                <span class="navbar-toggler-icon"></span> 
-
-            <div class="collapse navbar-collapse" id="navbarNav"> 
-                
-                <ul class="navbar-nav"> 
-
-                    <li class="nav-item"> 
-
-                        <a class="nav-link" href="index.html">Home</a> 
-
-                    </li> 
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="winter.html">Winter Clothing</a> 
-
-                    </li> 
-
-                </ul> 
-
-            </div> 
-
-        </div> 
-
-    </nav>
     </header>
 
     <main class="container my-5"> 
@@ -186,17 +165,52 @@ script.js</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
 <script>
-    // Show popup on load
-    window.onload = function() {
-        document.getElementById("luxora-popup").style.display = "flex";
-    };
+const popup = document.getElementById("luxora-popup");
+const signupBar = document.getElementById("signup-bar");
+const closePopupBtn = document.getElementById("popupClose");
+const openPopupBtn = document.getElementById("openPopup");
+const closeBarBtn = document.getElementById("closeSignupBar");
 
-    // Close when clicking X
-    document.getElementById("popupClose").onclick = function() {
-        document.getElementById("luxora-popup").style.display = "none";
-    };
+// Show popup only once
+window.onload = function () {
+    if (!localStorage.getItem("luxoraPopupClosed")) {
+        popup.style.display = "flex";
+    }
+};
+
+// X on popup → show bottom bar
+closePopupBtn.addEventListener("click", function () {
+    popup.style.display = "none";
+    signupBar.style.display = "block";
+    localStorage.setItem("luxoraPopupClosed", "true");
+});
+
+// Open popup from bottom bar
+openPopupBtn.addEventListener("click", function () {
+    popup.style.display = "flex";
+    signupBar.style.display = "none";
+});
+
+// Close bottom bar completely
+closeBarBtn.addEventListener("click", function () {
+    signupBar.style.display = "none";
+});
+
+// Prevent inner click close
+document.querySelector(".popup-box").addEventListener("click", function (e) {
+    e.stopPropagation();
+});
+
+// Overlay click → same as X
+popup.addEventListener("click", function () {
+    popup.style.display = "none";
+    signupBar.style.display = "block";
+    localStorage.setItem("luxoraPopupClosed", "true");
+});
+
+// Submit
+document.querySelector(".popup-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    window.location.href = "stock.html";
+});
 </script>
-``
-</body>
-</html>
-
