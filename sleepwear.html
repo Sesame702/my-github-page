@@ -13,124 +13,90 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="category-body">
-
-    <section class="coats-grid">
-        <h1 class="category-title">DRESSES</h1>
-
-        <div class="product-grid">
-
-            <div class="product-card">
-                <div class="product-image">
-                <img src="SIAN MAXI DRESS-BLUSH.png" class="img-front" alt="Sian Maxi Dress - Blush">
-                <img src="SIAN MAXI DRESS back.png" class="img-back" alt="Sian Maxi Dress - Blush back">
-                </div>
-               <div class="product-info">
-                <h3>Sian Maxi Dress - Blush</h3>
-                <p class="price">$225.00</p>
-               </div>
-             <button class="add-to-cart">Add to Cart</button>
-               <div class="qty-box">
-                  <button>-</button><button>+</button>
-                </div>
-            </div>
-
-    <div class="product-card">
-        <div class="product-image">
-                <img src="MORRIGAN MAXI DRESS.png" class="img-front" alt="MORRIGAN DRESS">
-                <img src="MORRIGAN MAXI back.png" class="img-back" alt="MORRIGAN DRESS back">
-        </div>
-        <div class="product-info">
-                <h3>Morrigan Maxi Dress - Cherry Lacquer</h3>
-                <p class="price">$340.00</p>
-            </div>
-               <button class="add-to-cart">Add to Cart</button>
-               <div class="qty-box">
-                  <button>-</button><button>+</button>
-                </div>
-            </div>
-
-    <div class="product-card">
-        <div class="product-image">
-            <img src="CHARLOTTE DRESS.png" class="img-front" alt="CHARLOTTE DRESS">
-            <img src="CHARLOTTE DRESS back.png" class="img-back" alt="CHARLOTTE DRESS back">
-        </div>
-        <div class="product-info">
-            <h3>Charlotte Maxi Dress - Ivory</h3>
-            <p class="price">$265.00</p>
-        </div>
-             <button class="add-to-cart">Add to Cart</button>
-               <div class="qty-box">
-                  <button>-</button><button>+</button>
-                </div>
-            </div>
-
-    <div class="product-card">
-        <div class="product-image">
-           <img src= "MANON DRESS.png" class="img-front" alt="MANON DRESS">
-           <img src="MANON DRESS back.png" class="img-back" alt="MANON DRESS back">
-        </div>
-        <div class="product-info">
-                <h3>Manon Maxi Dress - Black</h3>
-                <p class="price">$277.00</p>
-            </div>
-               <button class="add-to-cart">Add to Cart</button>
-               <div class="qty-box">
-                  <button>-</button><button>+</button>
-                </div>
-            </div>
-
-    <div class="product-card">
-        <div class="product-image">
-             <img src="CARINA DRESS.png" class="img-front" alt="CARINA DRESS">
-             <img src="CARINA DRESS back.png" class="img-back" alt="CARINA DRESS back">
-        </div>
-        <div class="product-info">
-                <h3>Carina Maxi Dress - Glacier Blue</h3>
-                <p class="price">$234.00</p>
-            </div>
-               <button class="add-to-cart">Add to Cart</button>
-               <div class="qty-box">
-                  <button>-</button><button>+</button>
-                </div>
-            </div>
-
-    <div class="product-card">
-        <div class="product-image">
-            <img src="MIRABELLA DRESS.png" class="img-front" alt="MIRABELLA DRESS">
-            <img src="MIRABELLA DRESS back.png" class="img-back" alt="MIRABELLA DRESS back">
-        </div>
-        <div class="product-info">
-                <h3>Mirabella Maxi Dress - Burgundy</h3>
-                <p class="price">$290.00</p>
-            </div>
-               <button class="add-to-cart">Add to Cart</button>
-               <div class="qty-box">
-                  <button>-</button><button>+</button>
-                </div>
-            </div>
-
-    </section>
-</section>
-</main>
   <!-- NAVBAR -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black px-4">
-            <a class="navbar-brand" href="index.html">LUXORA</a>
+   <header class="luxora-navbar">
+    <div class="nav-logo">LUXORA</div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="nav-links">
+            <nav class="main-nav"></nav>
+        <a href="index.html">Home</a>
+    
+    <!-- Sleepwear -->
+    <nav class="nav-item has-mega">
+      <a href="sleepwear.html">Sleepwear</a>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="dresses.html"></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+      <div class="mega-menu">
+        <div class="mega-content">
+
+          <div class="mega-column">
+            <h4>Sleepwear</h4>
+            <a href="sleepwear/pajamas.html">Pajamas</a>
+            <a href="sleepwear/nightgowns.html">Nightgowns</a>
+            <a href="sleepwear/short-sets.html">Short Sets</a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Swimwear -->
+    <nav class="nav-item has-mega">
+      <a href="swimwear.html">Swimwear</a>
+
+      <div class="mega-menu">
+        <div class="mega-content">
+
+          <div class="mega-column">
+            <h4>Swimwear</h4>
+            <a href="/swimwear/bikinis">Bikinis</a>
+            <a href="/swimwear/one-piece">One Pieces</a>
+            <a href="/swimwear/cover-ups">Cover Ups</a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Shapewear -->
+    <nav class="nav-item has-mega">
+      <a href="shapewear.html">Shapewear</a>
+
+      <div class="mega-menu">
+        <div class="mega-content">
+
+          <div class="mega-column">
+            <h4>All Shapewear</h4>
+            <a href="/shapewear/bodysuits">Bodysuits</a>
+            <a href="/shapewear/shorts">Shorts & Leggings</a>
+            <a href="/shapewear/waist-trainers">Waist Trainers</a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sets -->
+    <nav class="nav-item has-mega">
+      <a href="sets.html">Sets</a>
+
+      <div class="mega-menu">
+        <div class="mega-content">
+
+          <div class="mega-column">
+            <h4>Sets</h4>
+            <a href="/sets/sleep-sets">Sleep Sets</a>
+            <a href="/sets/lounge-sets">Lounge Sets</a>
+            <a href="/sets/swim-sets">Swim Sets</a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About Us</a>
+    </nav>
+    
+</header>
  <!-- FOOTER -->
     <footer class="text-center py-3 bg-dark text-white mt-5">
         <p>&copy; 2026 LUXORA Clothing Store</p>

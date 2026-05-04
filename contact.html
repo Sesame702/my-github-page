@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
@@ -14,26 +13,89 @@
 </head>
 
 <body class="contact-body">
+<header class="luxora-navbar">
+    <div class="nav-logo">LUXORA</div>
 
-    <!-- NAVBAR -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black px-4">
-            <a class="navbar-brand" href="index.html">LUXORA</a>
+    <nav class="nav-links">
+            <nav class="main-nav"></nav>
+        <a href="index.html">home</a>
+    
+    <!-- Sleepwear -->
+    <nav class="nav-item has-mega">
+      <a href="sleepwear.html">Sleepwear</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="mega-menu">
+        <div class="mega-content">
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+          <div class="mega-column">
+            <h4>Sleepwear</h4>
+            <a href="sleepwear/pajamas.html">Pajamas</a>
+            <a href="sleepwear/nightgowns.html">Nightgowns</a>
+            <a href="sleepwear/short-sets.html">Short Sets</a>
+          </div>
 
+        </div>
+      </div>
+    </nav>
+
+    <!-- Swimwear -->
+    <nav class="nav-item has-mega">
+      <a href="swimwear.html">Swimwear</a>
+
+      <div class="mega-menu">
+        <div class="mega-content">
+
+          <div class="mega-column">
+            <h4>Swimwear</h4>
+            <a href="/swimwear/bikinis">Bikinis</a>
+            <a href="/swimwear/one-piece">One Pieces</a>
+            <a href="/swimwear/cover-ups">Cover Ups</a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Shapewear -->
+    <nav class="nav-item has-mega">
+      <a href="shapewear.html">Shapewear</a>
+
+      <div class="mega-menu">
+        <div class="mega-content">
+
+          <div class="mega-column">
+            <h4>All Shapewear</h4>
+            <a href="/shapewear/bodysuits">Bodysuits</a>
+            <a href="/shapewear/shorts">Shorts & Leggings</a>
+            <a href="/shapewear/waist-trainers">Waist Trainers</a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sets -->
+    <nav class="nav-item has-mega">
+      <a href="sets.html">Sets</a>
+
+      <div class="mega-menu">
+        <div class="mega-content">
+
+          <div class="mega-column">
+            <h4>Sets</h4>
+            <a href="/sets/sleep-sets">Sleep Sets</a>
+            <a href="/sets/lounge-sets">Lounge Sets</a>
+            <a href="/sets/swim-sets">Swim Sets</a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+        <a href="contact.html">contact</a>
+        <a href="about.html">about us</a>
+    </nav>
+    
+</header>
     <!-- CONTACT SECTION -->
     <section class="contact-container">
         <h1>Contact Us</h1>
@@ -42,8 +104,10 @@
         <div class="contact-box">
 
             <div class="contact-item">
-                <h3>Call Us</h3>
-                <a class="contact-link" href="tel:+26775542328">📞 Tap to Call</a>
+              <h3>Live Chat</h3>
+              <button class="contact-link chat-open">
+               💬 Start Live Chat
+             </button>
             </div>
 
             <div class="contact-item">
@@ -64,6 +128,26 @@
            Sunday: Closed
        </p>
     </section>
+    <div class="live-chat-widget" id="liveChat">
+  <div class="live-chat-header">
+    <span>LUXORA</span>
+    <span class="close-chat" id="closeChat">×</span>
+  </div>
+
+  <div class="live-chat-body">
+    <p class="chat-intro">
+      Welcome! Please enter your information so we can assist you.
+    </p>
+
+    <label>First Name *</label>
+    <input type="text" placeholder="First name" />
+
+    <label>Email *</label>
+    <input type="email" placeholder="Email address" />
+
+    <button class="chat-start-btn">Start Chat</button>
+  </div>
+</div>
 
     <!-- FOOTER -->
     <footer class="text-center py-3 bg-dark text-white mt-5">
@@ -73,6 +157,19 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script>
+  const chatButton = document.querySelector('.chat-open');
+  const chatWidget = document.getElementById('liveChat');
+  const closeChat = document.getElementById('closeChat');
+
+  chatButton.addEventListener('click', () => {
+    chatWidget.style.display = 'block';
+  });
+
+  closeChat.addEventListener('click', () => {
+    chatWidget.style.display = 'none';
+  });
+</script>
 
 </body>
 </html>

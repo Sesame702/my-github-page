@@ -13,121 +13,90 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="category-body">
-
-    <section class="coats-grid">
-        <h1 class="category-title">SHAPEWEAR</h1>
-
-        <div class="product-grid">
-       
-            <div class="product-card">
-              <div class="product-image">
-               <img src="CATSUIT.png" class="img-front" alt="CATSUIT" width="600" height="600" >
-                <img src="CATSUITT.png" class="img-back" alt="CATSUIT ONLY">
-                </div>
-                <div class="product-info">
-                <h3>CATSUIT</h3>
-                <p class="price">$125.00</p>
-                </div>
-                <button class="add-to-cart">Add to Cart</button>
-               <div class="qty-box">
-                  <button>-</button><button>+</button>
-                </div>
-            </div>
-
-           <div class="product-card">
-            <div class="product-image">
-           <img src="OPEN BUST BODYSUIT.png" class="img-front" alt="OPEN BUST BODYSUIT" width="600" height="600">
-            <img src="OPEN BUST.png" class="img-back" alt="OPEN BUST BODYSUIT ONLY">
-            </div>
-            <div class="product-info">
-              <h3>OPEN BUST BODYSUIT</h3>
-              <p class="price">$175.00</p>
-            </div>
-            <button class="add-to-cart">Add to Cart</button>
-               <div class="qty-box">
-                  <button>-</button><button>+</button>
-                </div>
-
-           </div>
-
-        <div class="product-card">
-          <div class="product-image">
-           <img src="LACE SHAPEWEAR SHORT.png" class="img-front" alt="LACE SHAPEWEAR SHORT" width="1200" height="1200" >
-            <img src="LACE SHAPE.png" class="img-back" alt="LACE SHAPEWEAR SHORT ONLY">
-            </div>
-            <div class="product-info">
-            <h3>LACE SHAPEWEAR SHORT</h3>
-            <p class="price">$135.00</p>
-          </div>
-    
-    <div class="product-card">
-      <div class="product-image">
-           <img src="MIDI DRESS.png" class="img-front" alt="MIDI DRESS" width="600" height="600" >
-            <img src="MIDI DRESS ONLY.png" class="img-back" alt="MIDI DRESS ONLY">
-      </div>
-      <div class="product-info">
-            <h3>MIDI DRESS</h3>
-            <p class="price">$240.00</p>
-      </div> 
-             <button class="add-to-cart">Add to Cart</button>
-               <div class="qty-box">
-                  <button>-</button><button>+</button>
-                </div>
-    </div>
-    
-    <div class="product-card">
-      <div class="product-image">
-            <img src="CORSET.png" class="img-front" alt="CORSET" width="600" height="600" >
-            <img src="CORSET ONLY.png" class="img-back" alt="CORSET ONLY">
-      </div>
-        <div class="product-info">
-            <p>CORSET</p>
-            <p>$135.00</p>
-          </div>
-           <button class="add-to-cart">Add to Cart</button>
-               <div class="qty-box">
-                  <button>-</button><button>+</button>
-                </div>
-    </div>
-    
-
-    <div class="product-card">
-      <div class="product-image">
-            <img src="HALTER STIRRUP CATSUIT.png" class="img-front" alt="HALTER STIRRUP CATSUIT" width="600" height="600">
-            <img src="HALTER STIRRUP ONLY.png" class="img-back" alt="HALTER STIRRUP CATSUIT ONLT">
-      </div>
-      <div class="product-info">
-            <h3>HALTER STIRRUP CATSUIT</h3>
-            <p class="price">$245.00</p>
-            </div>
-        <button class="add-to-cart">Add to Cart</button>
-               <div class="qty-box">
-                  <button>-</button><button>+</button>
-               </div>
-  </div>
-
-    </section>
-
-</body>
   <!-- NAVBAR -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black px-4">
-            <a class="navbar-brand" href="index.html">LUXORA</a>
+   <header class="luxora-navbar">
+    <div class="nav-logo">LUXORA</div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="nav-links">
+            <nav class="main-nav"></nav>
+        <a href="index.html">Home</a>
+    
+    <!-- Sleepwear -->
+    <nav class="nav-item has-mega">
+      <a href="sleepwear.html">Sleepwear</a>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="shapewear.html"></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+      <div class="mega-menu">
+        <div class="mega-content">
+
+          <div class="mega-column">
+            <h4>Sleepwear</h4>
+            <a href="sleepwear/pajamas.html">Pajamas</a>
+            <a href="sleepwear/nightgowns.html">Nightgowns</a>
+            <a href="sleepwear/short-sets.html">Short Sets</a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Swimwear -->
+    <nav class="nav-item has-mega">
+      <a href="swimwear.html">Swimwear</a>
+
+      <div class="mega-menu">
+        <div class="mega-content">
+
+          <div class="mega-column">
+            <h4>Swimwear</h4>
+            <a href="/swimwear/bikinis">Bikinis</a>
+            <a href="/swimwear/one-piece">One Pieces</a>
+            <a href="/swimwear/cover-ups">Cover Ups</a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Shapewear -->
+    <nav class="nav-item has-mega">
+      <a href="shapewear.html">Shapewear</a>
+
+      <div class="mega-menu">
+        <div class="mega-content">
+
+          <div class="mega-column">
+            <h4>All Shapewear</h4>
+            <a href="/shapewear/bodysuits">Bodysuits</a>
+            <a href="/shapewear/shorts">Shorts & Leggings</a>
+            <a href="/shapewear/waist-trainers">Waist Trainers</a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sets -->
+    <nav class="nav-item has-mega">
+      <a href="sets.html">Sets</a>
+
+      <div class="mega-menu">
+        <div class="mega-content">
+
+          <div class="mega-column">
+            <h4>Sets</h4>
+            <a href="/sets/sleep-sets">Sleep Sets</a>
+            <a href="/sets/lounge-sets">Lounge Sets</a>
+            <a href="/sets/swim-sets">Swim Sets</a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About Us</a>
+    </nav>
+    
+</header>
  <!-- FOOTER -->
     <footer class="text-center py-3 bg-dark text-white mt-5">
         <p>&copy; 2026 LUXORA Clothing Store</p>
