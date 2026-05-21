@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRESSES - LUXORA</title>
+    <title>SLEEPWEAR - LUXORA</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
@@ -12,7 +12,205 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+  <section class="product-preview" id="productPreview">
+  <div class="preview-image">
+    <img id="previewImg" src="" alt="Selected product">
+  </div>
 
+  <div class="preview-details">
+    <p id="previewBrand" class="product-brand"></p>
+    <h2 id="previewName"></h2>
+    <p id="previewPrice"></p>
+
+    <p class="preview-description" id="previewDescription"> </p>
+
+    <label>Size</label>
+    <select id="previewSize">
+      <option>XS</option>
+      <option>S</option>
+      <option>M</option>
+      <option>L</option>
+      <option>XL</option>
+    </select>
+
+    <label>Quantity</label>
+    <input type="number" value="1" min="1" id="previewQty">
+
+    <button class="add-cart-btn">ADD TO CART</button>
+    <button class="checkout-btn">CHECKOUT</button>
+  </div>
+  </section>
+
+  <section class="products-section">
+
+  <h2 class="products-title">Sleepwear</h2>
+
+  <div class="products-grid">
+
+    <article class="product-card"
+    data-name="Long Sleeve Button Up Set"
+    data-brand="Luxora Sleep"
+    data-price="P 1,120"
+    data-description="A relaxed fit and stretchy fit.">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="sleepwearimg/pj1.png" alt="Long Sleeve Button Up Set">
+        <img class="hover-img" src="sleepwearimg/pj1hover.png" alt="Long Sleeve Button Up Set hover">
+        <span class="badge">Best Seller</span>
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">LUXORA SLEEP</p>
+        <h3 class="product-name">LONG SLEEVE BUTTON UP PAJAMA SET</h3>
+        <p class="product-price">P 1,120</p>
+      </div>
+    </article>
+
+    <article class="product-card"
+    data-name="Babydoll Dress"
+    data-brand="Luxora Sleep"
+    data-price="P 1,170"
+    data-description="A mini length and softly flared dress">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="sleepwearimg/pj2.png" alt="Babydoll Dress">
+        <img class="hover-img" src="sleepwearimg/pj2hover.png" alt="Babydoll Dress Hover">
+      </div>
+      </div>
+      <div class="product-info">
+        <p class="product-brand">LUXORA SLEEP</p>
+        <h3 class="product-name">BABYDOLL DRESS</h3>
+        <p class="product-price">P 1,170</p>
+      </div>
+    </article>
+
+     <article class="product-card"
+     data-name="Balloon Pant"
+    data-brand="Luxora Sleep"
+    data-price="P 999"
+    data-description="Light as air, and breezy comfort from slow mornings to cozy nights.">
+
+      <div class="product-image">
+        <div class="product-image hover-swap">
+        <img class="main-img" src="sleepwearimg/pj3.png" alt="Ballon Pant">
+        <img class="hover-img" src="sleepwearimg/pj3hover.png" alt="Ballon Pant Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">LUXORA SLEEP</p>
+        <h3 class="product-name">BALLOON PANT</h3>
+        <p class="product-price">P 999</p>
+      </div>
+    </article>
+
+    <article class="product-card"
+    data-name="Short Robe"
+    data-brand="Luxora Sleep"
+    data-price="P 1,149"
+    data-description="Features a classic lapel collar, side pockets at the seam, and an interior tie for added security.">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="sleepwearimg/pj4.png" alt="Short Robe">
+        <img class="hover-img" src="sleepwearimg/pj4hover.png" alt="Short Robe Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">LUXORA SLEEP</p>
+        <h3 class="product-name">SHORT ROBE</h3>
+        <p class="product-price">P 1,149</p>
+      </div>
+    </article>
+
+    <article class="product-card"
+    data-name="Bridal Sleep Feather Trim Long Robe"
+    data-brand="Bridal Sleep"
+    data-price="P 4,370"
+    data-description="A little luxury never hurt.">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="sleepwearimg/img5 (2).png" alt="Bridal Sleep Feather Trim Long Robe">
+        <img class="hover-img" src="sleepwearimg/pj5hover.png" alt="Bridal Sleep Feather Trim Long Robe Hover">
+         <span class="badge">Limited</span>
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">BRIDAL SLEEP</p>
+        <h3 class="product-name">BRIDAL SLEEP FEATHER TRIM LONG ROBE</h3>
+        <p class="product-price">P 4,370</p>
+      </div>
+    </article>
+    
+    <article class="product-card"
+    data-name="Bridal Sleep Feather Trim Long Set"
+    data-brand="Bridal Sleep"
+    data-price="P 4,470"
+    data-description="Say 'I do' to these essential pre-ceremony PJs.">
+
+      <div class="product-image">
+       <div class="product-image hover-swap">
+        <img class="main-img" src="sleepwearimg/img6 (2).png" alt="Bridal Sleep Feather Trim Long Set">
+        <img class="hover-img" src="sleepwearimg/pj6hover.png" alt="Bridal Sleep Feather Trim Long Set Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">BRIDAL SLEEP</p>
+        <h3 class="product-name">BRIDAL SLEEP FEATHER TRIM LONG SET</h3>
+        <p class="product-price">P 4,470</p>
+      </div>
+    </article>
+
+    <article class="product-card"
+     data-name="Short Grey Robe"
+    data-brand="Luxora Sleep"
+    data-price="P 1,110"
+    data-description="Comfy and simple look.">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="sleepwearimg/img7.png" alt="Short Grey Robe">
+        <img class="hover-img" src="sleepwearimg/img7hover.png " alt="Short Grey Robe Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">LUXORA SLEEP</p>
+        <h3 class="product-name">SHORT GREY ROBE</h3>
+        <p class="product-price">P 1,110</p>
+      </div>
+    </article>
+
+     <article class="product-card"
+      data-name="Flawless Robe"
+    data-brand="Luxora Sleep"
+    data-price="P 1,499"
+    data-description="Comfortable and relaxed fit.">
+
+      <div class="product-image">
+      <div class="product-image hover-swap"> 
+        <img class="main-img" src="sleepwearimg/img8.png" alt="Flawless Robe">
+        <img class="hover-img" src="sleepwearimg/img8hover.png" alt="Flawless Robe">
+      </div>
+      </div> 
+
+      <div class="product-info">
+        <p class="product-brand">LUXORA SLEEP</p>
+        <h3 class="product-name">FLAWLESS ROBE</h3>
+        <p class="product-price">P 1,499</p>
+      </div>
+    </article>
+  </div>
+</section>
+``
   <!-- NAVBAR -->
    <header class="luxora-navbar">
     <div class="nav-logo">LUXORA</div>
@@ -105,6 +303,44 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script>
+const productCards = document.querySelectorAll(".product-card");
+const preview = document.getElementById("productPreview");
+const productsSection = document.querySelector(".products-section");
 
+const previewImg = document.getElementById("previewImg");
+const previewBrand = document.getElementById("previewBrand");
+const previewName = document.getElementById("previewName");
+const previewPrice = document.getElementById("previewPrice");
+const previewDescription = document.getElementById("previewDescription");
+
+productCards.forEach(card => {
+  card.addEventListener("click", function () {
+    const image = card.querySelector(".main-img") || card.querySelector("img");
+
+    previewImg.src = image.src;
+    previewBrand.textContent = card.dataset.brand;
+    previewName.textContent = card.dataset.name;
+    previewPrice.textContent = card.dataset.price;
+    previewDescription.textContent = card.dataset.description;
+
+    preview.classList.add("active");
+    productsSection.classList.add("preview-open");
+
+    preview.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+const addCartBtn = document.querySelector(".add-cart-btn");
+const checkoutBtn = document.querySelector(".checkout-btn");
+
+addCartBtn.addEventListener("click", function () {
+  alert("Added to cart");
+});
+
+checkoutBtn.addEventListener("click", function () {
+  alert("Checked out");
+});
+</script>
 </body>
 </html>

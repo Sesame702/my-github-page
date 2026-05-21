@@ -12,6 +12,201 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+   <section class="product-preview" id="productPreview">
+  <div class="preview-image">
+    <img id="previewImg" src="" alt="Selected product">
+  </div>
+
+  <div class="preview-details">
+    <p id="previewBrand" class="product-brand"></p>
+    <h2 id="previewName"></h2>
+    <p id="previewPrice"></p>
+
+    <p class="preview-description" id="previewDescription"> </p>
+
+    <label>Size</label>
+    <select id="previewSize">
+      <option>XS</option>
+      <option>S</option>
+      <option>M</option>
+      <option>L</option>
+      <option>XL</option>
+    </select>
+
+    <label>Quantity</label>
+    <input type="number" value="1" min="1" id="previewQty">
+
+    <button class="add-cart-btn">ADD TO CART</button>
+    <button class="checkout-btn">CHECKOUT</button>
+  </div>
+  </section>
+  
+  <section class="products-section">
+
+  <h2 class="products-title">Shapewear</h2>
+
+  <div class="products-grid">
+
+ <article class="product-card"
+ data-name="Sculpt Shortie"
+    data-brand="Luxora Body"
+    data-price="P 1,011"
+    data-description="LIMITED EDITION">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="shapewearimg/shape1.png" alt="Sculpt Shortie">
+        <img class="hover-img" src="shapewearimg/shape1hover.png" alt="Sculpt Shortie Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">LUXORA BODY</p>
+        <h3 class="product-name">SCULPT SHORTIE</h3>
+        <p class="product-price">P 1,011</p>
+      </div>
+    </article>
+
+    <article class="product-card"
+     data-name="Open Bust BodySuit"
+    data-brand="Seamless Sculpt"
+    data-price="P 1,213"
+    data-description="A comfortable open bust bodysuit">
+
+      <div class="product-image">
+       <div class="product-image hover-swap">
+        <img class="main-img" src="shapewearimg/shape2.png" alt="Open Bust BodySuit">
+        <img class="hover-img" src="shapewearimg/shape2hover.png" alt="Open Bust BodySuit Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">SEAMLESS SCULPT</p>
+        <h3 class="product-name">OPEN BUST BODYSUIT</h3>
+        <p class="product-price">P 1,213</p>
+      </div>
+    </article>
+
+    <article class="product-card"
+    data-name="Low Back BodySuit"
+    data-brand="Seamless Sculpt"
+    data-price="P 1,030"
+    data-description="A comfortable low back bodysuit">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="shapewearimg/shape3.png" alt="Low Back BodySuit">
+        <img class="hover-img" src="shapewearimg/shape3hover.png" alt="Low Back BodySuit Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">SEAMLESS SCULPT</p>
+        <h3 class="product-name">LOW BACK BODYSUIT</h3>
+        <p class="product-price">P 1,030</p>
+      </div>
+    </article>
+
+ <article class="product-card"
+ data-name="Left Leg Solution Short"
+    data-brand="Luxora Body"
+    data-price="P 1,257"
+    data-description="A comfortable left leg solution short designed to shape the body">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="shapewearimg/shape4.png" alt="Left Leg Solution Short">
+        <img class="hover-img" src="shapewearimg/shape4hover.png" alt="Left Leg Solution Short Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">LUXORA BODY</p>
+        <h3 class="product-name">LEFT LEG SOLUTION SHORT</h3>
+        <p class="product-price">P 1,257</p>
+      </div>
+    </article>
+
+     <article class="product-card"
+     data-name="Mid Thigh BodySuit"
+    data-brand="Seamless Sculpt"
+    data-price="P 1,111"
+    data-description="A comfortable mid thigh bodysuit designed to shape the body."> 
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="shapewearimg/shape5.png" alt="Mid Thigh BodySuit">
+        <img class="hover-img" src="shapewearimg/shape5hover.png" alt="Mod Thigh BodySuit Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">SEAMLESS SCULPT</p>
+        <h3 class="product-name">MID THIGH BODYSUIT</h3>
+        <p class="product-price">P 1,111</p>
+      </div>
+    </article>
+
+     <article class="product-card"
+     data-name="High-Waisted Mid Thigh Short"
+    data-brand="Sheer Seamless"
+    data-price="P 500"
+    data-description="A high-waisted mid thigh short designed to shape the body">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="shapewearimg/shape6.png" alt="High-Waisted Mid Thigh Short">
+        <img class="hover-img" src="shapewearimg/shape6hover.png" alt="High-Waisted Mid Thigh Short Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">SHEER SEAMLESS</p>
+        <h3 class="product-name">HIGH-WAISTED MID THIGH SHORT</h3>
+        <p class="product-price">P 500</p>
+      </div>
+    </article>
+
+     <article class="product-card"
+     data-name="BodySuit"
+    data-brand="Sheer Seamless"
+    data-price="P 930"
+    data-description="A comfortable bodysuit designed to shape the body and luxory look ">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="shapewearimg/shape7.png" alt="BodySuit">
+        <img class="hover-img" src="shapewearimg/shape7hover.png" alt="BodySuit Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">SHEER SEAMLESS</p>
+        <h3 class="product-name">BODYSUIT</h3>
+        <p class="product-price">P 930</p>
+      </div>
+    </article>
+
+     <article class="product-card"
+     data-name="Mesh Plunge Dress"
+    data-brand="Luxora Body"
+    data-price="P 2,450"
+    data-description="LOW STOCK">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="shapewearimg/shape8.png" alt="Mesh Plunge Dress">
+        <img class="hover-img" src="shapewearimg/shape8hover.png" alt="Mesh Plunge Dress Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">LUXORA BODY</p>
+        <h3 class="product-name">MESH PLUNGE DRESS</h3>
+        <p class="product-price">P 2,450</p>
+      </div>
+    </article>
 
   <!-- NAVBAR -->
    <header class="luxora-navbar">
@@ -66,7 +261,7 @@
 
           <div class="mega-column">
             <h4>All Shapewear</h4>
-            <a href="/shapewear/bodysuits">Bodysuits</a>
+            <a href="/shapewear.html/shapewearimg/shape5.png shapewearimg/shape6.png">Bodysuits</a>
             <a href="/shapewear/shorts">Shorts & Leggings</a>
             <a href="/shapewear/waist-trainers">Waist Trainers</a>
           </div>
@@ -106,5 +301,44 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
+    <script>
+const productCards = document.querySelectorAll(".product-card");
+const preview = document.getElementById("productPreview");
+const productsSection = document.querySelector(".products-section");
+
+const previewImg = document.getElementById("previewImg");
+const previewBrand = document.getElementById("previewBrand");
+const previewName = document.getElementById("previewName");
+const previewPrice = document.getElementById("previewPrice");
+const previewDescription = document.getElementById("previewDescription");
+
+productCards.forEach(card => {
+  card.addEventListener("click", function () {
+    const image = card.querySelector(".main-img") || card.querySelector("img");
+
+    previewImg.src = image.src;
+    previewBrand.textContent = card.dataset.brand;
+    previewName.textContent = card.dataset.name;
+    previewPrice.textContent = card.dataset.price;
+    previewDescription.textContent = card.dataset.description;
+
+    preview.classList.add("active");
+    productsSection.classList.add("preview-open");
+
+    preview.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+const addCartBtn = document.querySelector(".add-cart-btn");
+const checkoutBtn = document.querySelector(".checkout-btn");
+
+addCartBtn.addEventListener("click", function () {
+  alert("Added to cart");
+});
+
+checkoutBtn.addEventListener("click", function () {
+  alert("Checked out");
+});
+</script>
 </body>
 </html>

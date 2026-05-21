@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOOTS - LUXORA</title>
+    <title>SETS - LUXORA</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
@@ -12,6 +12,200 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+  <section class="product-preview" id="productPreview">
+  <div class="preview-image">
+    <img id="previewImg" src="" alt="Selected product">
+  </div>
+
+  <div class="preview-details">
+    <p id="previewBrand" class="product-brand"></p>
+    <h2 id="previewName"></h2>
+    <p id="previewPrice"></p>
+
+    <p class="preview-description" id="previewDescription"> </p>
+
+    <label>Size</label>
+    <select id="previewSize">
+      <option>XS</option>
+      <option>S</option>
+      <option>M</option>
+      <option>L</option>
+      <option>XL</option>
+    </select>
+
+    <label>Quantity</label>
+    <input type="number" value="1" min="1" id="previewQty">
+
+    <button class="add-cart-btn">ADD TO CART</button>
+    <button class="checkout-btn">CHECKOUT</button>
+  </div>
+</section>
+  <section class="products-section">
+
+  <h2 class="products-title">Sets</h2>
+
+  <div class="products-grid">
+
+  <article class="product-card"
+  data-name="Scoop Neck Top"
+  data-brand="Refined Knit"
+  data-price="P 1,441"
+  data-description="A soft fitted scoop neck top designed for everyday comfort and a clean luxury look.">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="setsimg/set1.png" alt="Scoop Neck Top">
+        <img class="hover-img" src="setsimg/set1hover.png" alt="Scoop Neck Top Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">REFINED KNIT</p>
+        <h3 class="product-name">SCOOP NECK TOP</h3>
+        <p class="product-price">P 1,441</p>
+      </div>
+    </article>
+
+    <article class="product-card"
+    data-name="Tank"
+    data-brand="Cotton Rib"
+    data-price="P 550"
+    data-description="A tank designed for everyday comfort and a clean luxury look.">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="setsimg/set2.png" alt="Tank">
+        <img class="hover-img" src="setsimg/set2hover.png" alt="Tank Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">COTTON RIB</p>
+        <h3 class="product-name">TANK</h3>
+        <p class="product-price">P 550</p>
+      </div>
+    </article>
+
+    <article class="product-card"
+    data-name="Classic Hoodie"
+    data-brand="Cotton fleece"
+    data-price="P 1,240"
+    data-description="A classic hoodie designed for everyday comfort.">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="setsimg/set3.png" alt="Classic Hoodie">
+        <img class="hover-img" src="setsimg/set3hover.png" alt="Classic Hoodie Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">COTTON FLEECE</p>
+        <h3 class="product-name">CLASSIC HOODIE</h3>
+        <p class="product-price">P 1,240</p>
+      </div>
+    </article>
+
+    <article class="product-card"
+    data-name="Classic Straight Leg Pant"
+    data-brand="Cotton fleece"
+    data-price="P 1,230"
+    data-description="A classic straight leg pant designed for everyday comfort.">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="setsimg/set4.png" alt="Classic Straight Leg Pant">
+        <img class="hover-img" src="setsimg/set4hover.png" alt="Classic Straight Leg Pant Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">COTTON FLEECE</p>
+        <h3 class="product-name">CLASSIC STRAIGHT LEG PANT</h3>
+        <p class="product-price">P 1,230</p>
+      </div>
+    </article>
+
+    <article class="product-card"
+    data-name="Oversized Double Waistband Pant"
+    data-brand="Cotton fleece"
+    data-price="P 1,444"
+    data-description="An oversized double waistband pant designed for everyday comfort.">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="setsimg/set5.png" alt="Oversized Double Waistband Pant">
+        <img class="hover-img" src="setsimg/set5hover.png" alt="Oversized Double Waistband Pant Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">COTTON FLEECE</p>
+        <h3 class="product-name">OVERSIZED DOUBLE WAISTBAND PANT</h3>
+        <p class="product-price">P 1,444</p>
+      </div>
+    </article>
+
+    <article class="product-card"
+    data-name="One Shoulder Top"
+    data-brand="Smooth Layers"
+    data-price="P 800"
+    data-description="A one shoulder top hoodie designed for everyday comfort.">
+
+      <div class="product-image">
+        <div class="product-image hover-swap">
+        <img class="main-img" src="setsimg/set6.png" alt="One Shoulder Top">
+        <img class="hover-img" src="setsimg/set6hover.png" alt="One Shoulder Top Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">SMOOTH LAYERS</p>
+        <h3 class="product-name">ONE SHOULDER TOP</h3>
+        <p class="product-price">P 800</p>
+      </div>
+    </article>
+
+    <article class="product-card"
+     data-name="Boxer"
+    data-brand="Cotton Rib"
+    data-price="P 567"
+    data-description="A boxer designed for everyday comfort.">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="setsimg/set7.png" alt="Boxer">
+        <img class="hover-img" src="setsimg/set7hover.png" alt="Boxer Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">COTTON RIB</p>
+        <h3 class="product-name">BOXER</h3>
+        <p class="product-price">P 567</p>
+      </div>
+    </article>
+
+    <article class="product-card"
+     data-name="Classic Jogger"
+    data-brand="Cotton Fleece"
+    data-price="P 1,290"
+    data-description="A classic jogger designed for everyday comfort.">
+
+      <div class="product-image">
+      <div class="product-image hover-swap">
+        <img class="main-img" src="setsimg/set8.png" alt="Classic Jogger">
+        <img class="hover-img" src="setsimg/set8hover.png" alt="Classic Jogger Hover">
+      </div>
+      </div>
+
+      <div class="product-info">
+        <p class="product-brand">COTTON FLEECE</p>
+        <h3 class="product-name">CLASSIC JOGGER</h3>
+        <p class="product-price">P 1,290</p>
+      </div>
+    </article>
 
   <!-- NAVBAR -->
     <header class="luxora-navbar">
@@ -84,9 +278,8 @@
 
           <div class="mega-column">
             <h4>Sets</h4>
-            <a href="/sets/sleep-sets">Sleep Sets</a>
-            <a href="/sets/lounge-sets">Lounge Sets</a>
-            <a href="/sets/swim-sets">Swim Sets</a>
+            <a href="sleepwear.html">Sleep Sets</a>
+            <a href="swimwear.html">Swim Sets</a>
           </div>
 
         </div>
@@ -106,5 +299,44 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
+    <script>
+const productCards = document.querySelectorAll(".product-card");
+const preview = document.getElementById("productPreview");
+const productsSection = document.querySelector(".products-section");
+
+const previewImg = document.getElementById("previewImg");
+const previewBrand = document.getElementById("previewBrand");
+const previewName = document.getElementById("previewName");
+const previewPrice = document.getElementById("previewPrice");
+const previewDescription = document.getElementById("previewDescription");
+
+productCards.forEach(card => {
+  card.addEventListener("click", function () {
+    const image = card.querySelector(".main-img") || card.querySelector("img");
+
+    previewImg.src = image.src;
+    previewBrand.textContent = card.dataset.brand;
+    previewName.textContent = card.dataset.name;
+    previewPrice.textContent = card.dataset.price;
+    previewDescription.textContent = card.dataset.description;
+
+    preview.classList.add("active");
+    productsSection.classList.add("preview-open");
+
+    preview.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+const addCartBtn = document.querySelector(".add-cart-btn");
+const checkoutBtn = document.querySelector(".checkout-btn");
+
+addCartBtn.addEventListener("click", function () {
+  alert("Added to cart");
+});
+
+checkoutBtn.addEventListener("click", function () {
+  alert("Checked out");
+});
+</script>
 </body>
 </html>

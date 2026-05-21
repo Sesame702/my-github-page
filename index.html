@@ -52,7 +52,7 @@
 
 <!-- NAVBAR -->
 <header class="luxora-navbar">
-    <div class="nav-logo">Luxora</div>
+    <div class="nav-logo">LUXORA</div>
 
     <nav class="nav-links">
             <nav class="main-nav"></nav>
@@ -131,6 +131,15 @@
     </nav>
         <a href="contact.html">Contact</a>
         <a href="about.html">About Us</a>
+        
+        <form class="site-search" id="siteSearchForm">
+  <input 
+    type="text" 
+    id="siteSearchInput" 
+    placeholder="Search products..."
+  >
+  <button type="submit">Search</button>
+</form>
     </nav>
     
 </header>
@@ -167,21 +176,21 @@
 
         <div class="cat-card">
             <a href="shapewear.html" class="category-link">
-            <img src="shapewear.png" alt="SHAPEWEAR" width="360" height="360">
+            <img src="shapewear.png" alt="Shapewear" width="360" height="360">
                 <p>SHAPEWEAR</p>
             </a>
         </div>
 
         <div class="cat-card">
             <a href="sets.html" class="category-link">
-           <img src="sets.png" alt="HEELS" width="360" height="360">
+           <img src="sets.png" alt="Sets" width="360" height="360">
                 <P>SETS</P> 
             </a>
         </div>
 
         <div class="cat-card">
             <a href="sleepwear.html" class="category-link">
-            <img src="sleepwear.png"  alt="dresses" width="420" height="420">
+            <img src="sleepwear.png"  alt="Sleepwear" width="420" height="420">
                 <P>SLEEPWEAR</P>
             </a>
         </div>
@@ -234,7 +243,7 @@
 
     </div>
 </section>
-</body>
+
     <footer>
         <p>&copy;2026 LUXORA CLOTHING STORE</p>
     </footer>
@@ -284,3 +293,6 @@ document.getElementById("popupDecline").addEventListener("click", function () {
     localStorage.setItem("luxoraPopupClosed", "true");
 });
 </script>
+<script src="search.js"></script>
+</body>
+</html>

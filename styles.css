@@ -110,7 +110,7 @@ body{
 /* Blurred background image */
 .swimwear .bg-blur {
   background: url("img6.png") center/cover no-repeat;
-  filter: blur(8px);
+  filter: blur(0px);
 }
 .categories {
     text-align: center;
@@ -765,4 +765,264 @@ main a[href^="mailto"] {
     font-size: 10px;
     color: #555;
     line-height: 1.4;
+}
+/* SECTION */
+.products-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.products-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+}
+
+/* GRID */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGE CONTAINER (VERY IMPORTANT) */
+.product-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4; /* keeps uniform height */
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* BADGE */
+.badge {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: black;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+}
+
+/* INFO */
+.product-info {
+  padding-top: 1rem;
+  text-align: left;
+}
+
+.product-brand {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: #666;
+}
+
+.product-name {
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+}
+
+.product-price {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+/* Tablets */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Image changes on hover */
+
+.hover-swap {
+  position: relative;
+}
+
+.hover-swap .hover-img {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.hover-swap .main-img,
+.hover-swap .hover-img {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.product-card:hover .hover-swap .main-img {
+  opacity: 0;
+}
+
+.product-card:hover .hover-swap .hover-img {
+  opacity: 1;
+  transform: scale(1.04);
+}
+/* Product preview section */
+
+.product-preview {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 110px 5% 40px;
+  min-height: 55vh;
+  border-bottom: 1px solid #ddd;
+  background: white;
+}
+
+.product-preview.active {
+  display: grid;
+}
+
+.preview-image {
+  height: 520px;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+.preview-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.preview-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 420px;
+}
+
+.preview-details h2 {
+  font-size: 28px;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+#previewPrice {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.preview-description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.preview-details label {
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.preview-details select,
+.preview-details input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+}
+
+.add-cart-btn,
+.checkout-btn {
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.add-cart-btn {
+  background: black;
+  color: white;
+}
+
+.checkout-btn {
+  background: #800020;
+  color: white;
+}
+
+.products-section.preview-open {
+  padding-top: 40px;
+}
+
+.products-section.preview-open .product-image {
+  aspect-ratio: 3 / 3.6;
+}
+
+.products-section.preview-open .products-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .product-preview {
+    grid-template-columns: 1fr;
+    padding-top: 100px;
+  }
+
+  .preview-image {
+    height: 420px;
+  }
+}
+.site-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-search input {
+  padding: 9px 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+  width: 180px;
+}
+
+.site-search input:focus {
+  border-color: #8b0024;
+}
+
+.site-search button {
+  padding: 9px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #8b0024;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.site-search button:hover {
+  background-color: #65001a;
 }
