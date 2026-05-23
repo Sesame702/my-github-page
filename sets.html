@@ -313,16 +313,16 @@ const previewDescription = document.getElementById("previewDescription");
 
 productCards.forEach(card => {
   card.addEventListener("click", function () {
-    const image = card.querySelector(".main-img") || card.querySelector("img");
+    const image = card.querySelector(".main-img") || card.querySelector("img")
 
-    previewImg.src = image.src;
-    previewBrand.textContent = card.dataset.brand;
-    previewName.textContent = card.dataset.name;
-    previewPrice.textContent = card.dataset.price;
-    previewDescription.textContent = card.dataset.description;
+    previewImg.src = image.src
+    previewBrand.textContent = card.dataset.brand
+    previewName.textContent = card.dataset.name
+    previewPrice.textContent = card.dataset.price
+    previewDescription.textContent = card.dataset.description
 
-    preview.classList.add("active");
-    productsSection.classList.add("preview-open");
+    preview.classList.add("active")
+    productsSection.classList.add("preview-open")
 
     preview.scrollIntoView({ behavior: "smooth" });
   });
@@ -332,12 +332,12 @@ const addCartBtn = document.querySelector(".add-cart-btn");
 const checkoutBtn = document.querySelector(".checkout-btn");
 
 addCartBtn.addEventListener("click", function () {
-  alert("Added to cart");
-});
+  alert("Added to cart")
+})
 
 checkoutBtn.addEventListener("click", function () {
-  alert("Checked out");
-});
+  alert("Checked out")
+})
 </script>
 <script src="search.js"></script>
 </body>
