@@ -310,7 +310,7 @@ if (searchForm && searchInput) {
     if (searchValue !== "") {
       window.location.href = "search.html?q=" + encodeURIComponent(searchValue);
     }
-  });
+  })
 }
 
 
@@ -339,7 +339,7 @@ if (searchResults) {
       `.toLowerCase();
 
       return searchText.includes(query.toLowerCase());
-    });
+    })
 
     if (filteredProducts.length > 0) {
       searchResults.innerHTML = filteredProducts.map(product => `
